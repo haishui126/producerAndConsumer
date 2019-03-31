@@ -72,7 +72,7 @@ class Item{
             }
         }
         buf[in] = in+1;
-        System.out.println("生产"+buf[in]);
+        System.out.println("生产"+buf[in]+"，现在缓存的使用情况为：");
         System.out.println(Arrays.toString(buf));
         empty--;
         in = (in+1)%20;
@@ -88,7 +88,7 @@ class Item{
                 e.printStackTrace();
             }
         }
-        System.out.println("消费"+buf[out]);
+        System.out.println("消费"+buf[out]+"，现在缓存的使用情况为：");
         buf[out] = 0;
         System.out.println(Arrays.toString(buf));
         empty++;
